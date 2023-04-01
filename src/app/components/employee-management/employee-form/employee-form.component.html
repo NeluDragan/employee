@@ -1,0 +1,48 @@
+<h2 mat-dialog-title>Employee Form</h2>
+<mat-dialog-content class="mat-typography">
+  <div class="example-container">
+    <form [formGroup]="employeesGroup" style="width: 100%;">
+      <mat-form-field>
+        <mat-label>Quick Info</mat-label>
+        <textarea
+          formControlName="quickInfo"
+          matInput
+          placeholder="Ex. Pizza"
+          value="Sushi"
+        ></textarea>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Employee e-mail</mat-label>
+        <input
+          formControlName="email"
+          matInput
+          placeholder="Ex. Pizza"
+          value="Sushi"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Position</mat-label>
+        <input
+          formControlName="position"
+          matInput
+          placeholder="Ex. Pizza"
+          value="Sushi"
+        />
+      </mat-form-field>
+    </form>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button
+    mat-button
+    [mat-dialog-close]="true"
+    cdkFocusInitial
+    (click)="saveEmployee()"
+    [disabled]="!employeeChanges || employeesGroup.invalid"
+  >
+    Install
+  </button>
+</mat-dialog-actions>
