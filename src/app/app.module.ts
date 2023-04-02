@@ -19,13 +19,16 @@ import { MatDialogModule } from '@angular/material/dialog'
 import { EmployeeFormComponent } from './components/employee-management/employee-form/employee-form.component'
 import { MatInputModule } from '@angular/material/input'
 import { EmployeeService } from './components/employees/common/services/employee.service'
-import { HttpClientModule } from '@angular/common/http';
-import { LoginComponent } from './components/login/login.component'
-import { MatCardModule } from '@angular/material/card';
-
+import { HttpClientModule } from '@angular/common/http'
+import { frontPageComponent } from './components/front-page/front-page'
 
 @NgModule({
-  declarations: [AppComponent, EmployeesComponent, EmployeeFormComponent, LoginComponent],
+  declarations: [
+    AppComponent,
+    EmployeesComponent,
+    EmployeeFormComponent,
+    frontPageComponent,
+  ],
   imports: [
     CommonModule,
     RouterModule,
@@ -43,7 +46,7 @@ import { MatCardModule } from '@angular/material/card';
     MatDialogModule,
     MatInputModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent],
