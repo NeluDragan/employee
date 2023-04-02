@@ -21,6 +21,7 @@ import { MatInputModule } from '@angular/material/input'
 import { EmployeeService } from './components/employees/common/services/employee.service'
 import { HttpClientModule } from '@angular/common/http'
 import { frontPageComponent } from './components/front-page/front-page'
+import { MatCardModule } from '@angular/material/card'
 
 @NgModule({
   declarations: [

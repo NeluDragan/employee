@@ -1,0 +1,24 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: table;
+  color: rgba(63, 81, 181, 255);
+}
+
+.login-card {
+  stroke: 2px;
+}
