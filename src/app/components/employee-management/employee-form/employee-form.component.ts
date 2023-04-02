@@ -35,14 +35,12 @@ export class EmployeeFormComponent {
         ],
       }))
     }
-
     return (this.employeesGroup = this.fb.group({
       email: ['', Validators.required],
       position: ['', Validators.required],
       quickInfo: ['', Validators.required],
     }))
   }
-
   saveEmployee(): void {
     if (this.employeeChanges) {
       return this.dialogRef.close({
