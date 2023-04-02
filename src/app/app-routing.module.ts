@@ -10,7 +10,7 @@ const routes: Routes = [
     redirectTo: 'front-page',
     pathMatch: 'full',
   },
-  { path: '**', redirectTo: 'front-page' },
+  // { path: '**', redirectTo: 'front-page' },
   {
     path: 'employees',
     component: EmployeesComponent,
