@@ -7,10 +7,10 @@ import { filter, switchMap } from 'rxjs'
   templateUrl: './front-page-component.html',
   styleUrls: ['./front-page-component.scss'],
 })
-export class {
+export class frontPageComponent {
   dialog: any
   addEmployee() {
-    const dialogRef = this.dialog.open(frontPageComponent, {
+    const dialogRef = this.dialog.open(dialogLoginComponent, {
       width: '400px',
       data: {
         editState: false,
