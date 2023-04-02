@@ -19,10 +19,13 @@ import { MatDialogModule } from '@angular/material/dialog'
 import { EmployeeFormComponent } from './components/employee-management/employee-form/employee-form.component'
 import { MatInputModule } from '@angular/material/input'
 import { EmployeeService } from './components/employees/common/services/employee.service'
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component'
+import { MatCardModule } from '@angular/material/card';
+
 
 @NgModule({
-  declarations: [AppComponent, EmployeesComponent, EmployeeFormComponent],
+  declarations: [AppComponent, EmployeesComponent, EmployeeFormComponent, LoginComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -40,6 +43,7 @@ import { HttpClientModule } from '@angular/common/http'
     MatDialogModule,
     MatInputModule,
     HttpClientModule,
+    MatCardModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent],
