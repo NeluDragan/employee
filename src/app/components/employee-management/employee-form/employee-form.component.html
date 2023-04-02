@@ -1,34 +1,33 @@
 <h2 mat-dialog-title>Employee Form</h2>
 <mat-dialog-content class="mat-typography">
   <div class="example-container">
-    <form [formGroup]="employeesGroup" style="width: 100%;">
+    <form [formGroup]="employeesGroup">
       <mat-form-field>
-        <mat-label>Quick Info</mat-label>
+        <mat-label class="input">Quick Info</mat-label>
         <textarea
           formControlName="quickInfo"
           matInput
-          placeholder="Ex. Pizza"
-          value="Sushi"
+          placeholder="Ex. worked before at Google"
+          value="quickInfo"
         ></textarea>
       </mat-form-field>
-
       <mat-form-field>
-        <mat-label>Employee e-mail</mat-label>
+        <mat-label class="input">Employee e-mail</mat-label>
         <input
           formControlName="email"
           matInput
-          placeholder="Ex. Pizza"
-          value="Sushi"
+          placeholder="example@mail.com"
+          value="email"
         />
       </mat-form-field>
 
       <mat-form-field>
-        <mat-label>Position</mat-label>
+        <mat-label class="input">Position</mat-label>
         <input
           formControlName="position"
           matInput
-          placeholder="Ex. Pizza"
-          value="Sushi"
+          placeholder="manager"
+          value="position"
         />
       </mat-form-field>
     </form>
@@ -43,6 +42,6 @@
     (click)="saveEmployee()"
     [disabled]="!employeeChanges || employeesGroup.invalid"
   >
-    Install
+    Done
   </button>
 </mat-dialog-actions>
