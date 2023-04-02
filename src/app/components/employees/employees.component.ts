@@ -5,6 +5,8 @@ import { MatDialog } from '@angular/material/dialog'
 import { EmployeeService } from './common/services/employee.service'
 import { filter, pipe, switchMap } from 'rxjs'
 
+
+
 const ELEMENT_DATA: IEmployee[] = [
   {
     id: 1,
@@ -90,6 +92,7 @@ const ELEMENT_DATA: IEmployee[] = [
 @Component({
   selector: 'app-employees',
   templateUrl: './employees.component.html',
+  styleUrls: ['./employees.component.scss'],
 })
 export class EmployeesComponent {
   displayedColumns: string[] = [
