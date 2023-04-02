@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router'
 import { EmployeesComponent } from './components/employees/employees.component'
 import { frontPageComponent } from './components/front-page/front-page'
 
-
 const routes: Routes = [
   {
     path: '*',
