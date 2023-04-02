@@ -90,6 +90,7 @@ const ELEMENT_DATA: IEmployee[] = [
 @Component({
   selector: 'app-employees',
   templateUrl: './employees.component.html',
+  styleUrls: ['./employees.component.scss'],
 })
 export class EmployeesComponent {
   displayedColumns: string[] = [
